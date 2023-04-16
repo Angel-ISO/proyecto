@@ -65,6 +65,12 @@ height: 35px;
     color: rgb(112, 94, 218);;
 
 }
+.catalogo{
+ display: flex;
+ justify-content: center;
+ padding-top: 6%;
+ color: black;
+}
 .close-btn:hover{
     cursor: pointer;
 }
@@ -90,7 +96,7 @@ cursor: pointer;
 
 /* estilo del titulo imagenes y catalogo */
 .products{
-    padding-top: 80px;
+    padding-top: 15%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
