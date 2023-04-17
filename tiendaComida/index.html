@@ -17,7 +17,7 @@
             <img id="logo" src="/images/logoWhite.png" alt="">
             
             <ul>
-                <a class="alink" href="#">inicio</a>
+                <a class="alink" href="/index.html">inicio</a>
             </ul>
             <ul>
                 <a class="alink" href="/servicios/index.html">servicios</a>
@@ -25,11 +25,28 @@
             <ul>
                 <a class="alink" href="/soporte/index.html">soporte</a>
             </ul>
-            <div class="carrito">
-               <a href=""><img src="/images/cart-regular-24.png"></a>
+
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="cerrarModal()">&times;</span>
+                  <h2>Carrito de compras</h2>
+                  <div class="cart-items">
+                  </div>
+                  <div class="cart-total">
+                    <p>Total a pagar: <span id="total">0</span></p>
+                  </div>
+                </div>
+              </div>
+            
+            <div  class="cart-count" onclick="abrirModal()">
+                
+                <img src="/images/cart-regular-24.png">
+               <span id="count">0</span>
             </div>
         </section>
     </nav>
+    
     <div class="contenedor1">
         <h1>cafeteria virtual</h1>
         <a href="#">seccion compra</a>
@@ -38,27 +55,29 @@
             </div>
     </div>
 
+   
+
     <div class="products">
         <div class="cart-products"></div>
       <div class="carts">
             <img src="/images/papasmargarita.jpg"> 
             <h3>papas</h3>
             <p>$2000</p>
-            <a href="">añadir al carrito</a>
+            <button onclick="agregarAlCarrito('papas', '/images/papasmargarita.jpg', 2000)">Agregar al carrito</button>
       </div>
       <div class="carts">
             <img src="/images/Color-del-cafe-filtrado-y-su-parecido-con-el-color-de-un-vino-tinto.-scaled.jpg"> 
             <h3>cafe</h3>
             <p>$800</p>
-            <a href="">añadir al carrito</a>
-      </div>
+            <button onclick="agregarAlCarrito('cafe', '/images/Color-del-cafe-filtrado-y-su-parecido-con-el-color-de-un-vino-tinto.-scaled.jpg', 800)">Agregar al carrito</button>        </div>
       <div class="carts">
             <img src="/images/Pastel-de-Pollo7.jpg"> 
             <h3>pastel de pollo</h3>
             <p>$2,300</p>
-            <a href="">añadir al carrito</a>
-      </div>
+            <button onclick="agregarAlCarrito('pastel de pollo', '/images/Pastel-de-Pollo7.jpg', 2300)">Agregar al carrito</button>        
+        </div>
     </div>
+    <div class="cart-items"></div>
 
   
     <script src="/js/tienda.js" ></script>

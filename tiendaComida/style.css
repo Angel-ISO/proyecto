@@ -7,6 +7,12 @@ nav{
 }
 
 
+.cart-items {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 10px;
+  }
+
 
 /* nav children style*/
 .contenedor1{
@@ -130,7 +136,7 @@ cursor: pointer;
 .carts div{
     position: relative;
 }
-.carts a{
+.carts button{
 
     font-family: system-ui;
     text-decoration: none;
@@ -143,7 +149,7 @@ cursor: pointer;
     border-radius: 5px;
 }
 
-.carts a:hover{
+.carts button:hover{
     background: #fff;
     color: rgb(112, 94, 218);
     border: solid 2px rgb(112, 94, 218);

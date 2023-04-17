@@ -5,12 +5,12 @@ function showDetails(lugar) {
     switch (lugar) {
       case 'hunters':
         lugarNombre = 'salon recreacional hunters';
-        lugarDescripcion = 'Descripción de la Universidad';
+        lugarDescripcion = 'aqui es un lugar para relajarse y pasarla bien';
         lugarDisponibilidad = 'Disponible';
         break;
       case 'cafeteria':
         lugarNombre = 'cafeteria';
-        lugarDescripcion = 'Descripción de los baños';
+        lugarDescripcion = 'lugar de consumo de alimentos';
         lugarDisponibilidad = 'Disponible';
         break;
       case '8avo':
@@ -31,20 +31,23 @@ function showDetails(lugar) {
              '<tr><td>Disponibilidad:</td><td>' + lugarDisponibilidad + '</td></tr>' +
              '</table>';
 
-  swal({
-    title: lugarNombre,
-    html: html,
-    confirmButtonText: 'Cerrar',
-    allowOutsideClick: true,
-    showCloseButton: true,
-    padding: '1.5rem',
-    background: '#f7f7f7',
-    customClass: {
-      container: 'my-swal',
-      title: 'my-swal-title',
-      htmlContainer: 'my-swal-html',
-      confirmButton: 'my-swal-btn',
-      closeButton: 'my-swal-btn'
-    }
-  });
+
+      swal({
+                title: lugarNombre,
+                text: lugarDescripcion,
+                html: html,
+                confirmButtonText: 'Cerrar',
+                allowOutsideClick: true,
+                showCloseButton: true,
+                padding: '1.5rem',
+                background: '#748fe7a8',
+                customClass: {
+                container: 'my-swal',
+                title: 'my-swal-title',
+                htmlContainer: 'my-swal-html',
+                confirmButton: 'my-swal-btn',
+                closeButton: 'my-swal-btn',
+                footer: '<a href="#">Why do I have this issue?</a>'
+            }
+        });
 }
